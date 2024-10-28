@@ -46,7 +46,7 @@ spec:
     tier: api
     project: expense
   ports:
-  - name: mysql-svc-port
+  - name: backend-svc-port
     protocol: TCP
     port: 8080
     targetPort: 8080 # container port
