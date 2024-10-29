@@ -24,19 +24,19 @@ spec:
       containers:
       - name: mysql
         image: saanvilikhith/mysql:v1
-# ---
-# apiVersion: v1
-# kind: Service
-# metadata:
-#   name: mysql-service
-#   namespace: expense
-# spec:
-#   selector:
-#     app: mysql
-#     tier: db
-#     project: expense
-#   ports:
-#   - name: mysql-svc-port
-#     protocol: TCP
-#     port: 3306
-#     targetPort: 3306 # container port
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql-service
+  namespace: expense
+spec:
+  selector:
+    app: mysql
+    tier: db
+    project: expense
+  ports:
+  - name: mysql-svc-port
+    protocol: TCP
+    port: 3306
+    targetPort: 3306 # container port
