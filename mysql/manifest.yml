@@ -8,7 +8,7 @@ metadata:
     tier: db
     project: expense
 spec:
-  replicas: 1 # defalut 1 only
+  replicas: 3 # defalut 1 only
   selector:
     matchLabels:
       tier: db
